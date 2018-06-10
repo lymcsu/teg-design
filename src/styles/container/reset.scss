@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+	/* 禁止点击的时候会被高亮显示 */
+    -webkit-tap-highlight-color: transparent;
+    /* 禁止页面文字被选中 */
+	-webkit-user-select: none;
+	/* 禁用长按页面时的弹出菜单(iOS下有效), img和a标签都要加 */
+    -webkit-touch-callout: none;
+    /*  局部滚动(仅iOS5 以上支持) */
+    -webkit-overflow-scrolling: touch;
+}
+a {
+    text-decoration: none;
+}
+input, textarea {
+    -webkit-appearance: none;
+}
+*:not(input,textarea) {
+    -webkit-touch-callout: none;//长按屏幕时会禁止设备弹出列表按钮
+    -webkit-user-select: none;//之所以放在这里是因为如果放到body中会导致个别Android机型（Google  Nexus，Android 4.2.2）输入框无法输入
+}
+:focus {
+    /* 防止在获得焦点时, 出现边框 */
+    outline: none;
+    -webkit-tap-highlight-color:transparent
+}
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

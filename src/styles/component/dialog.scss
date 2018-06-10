@@ -1,0 +1,169 @@
+.tui-dialog {
+    position: fixed;
+    z-index: 5000;
+    width: 80%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden
+}
+
+.tui-dialog__hd {
+    padding: 1.3em 1.6em .5em
+}
+
+.tui-dialog__title {
+    font-weight: 400;
+    font-size: 18px
+}
+
+.tui-dialog__bd {
+    padding: 0 1.6em .8em;
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #999
+}
+
+.tui-dialog__bd:first-child {
+    padding: 2.7em 20px 1.7em;
+    color: #353535
+}
+
+.tui-dialog__ft {
+    position: relative;
+    line-height: 48px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex
+}
+
+.tui-dialog__ft:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #d5d5d6;
+    color: #d5d5d6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5)
+}
+
+.tui-dialog__btn {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #3cc51f;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    position: relative
+}
+
+.tui-dialog__btn:active {
+    background-color: #eee
+}
+
+.tui-dialog__btn:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #d5d5d6;
+    color: #d5d5d6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5)
+}
+
+.tui-dialog__btn:first-child:after {
+    display: none
+}
+
+.tui-dialog__btn_default {
+    color: #353535
+}
+
+.tui-dialog__btn_primary {
+    color: #0bb20c
+}
+
+.tui-skin_android .tui-dialog {
+    text-align: left;
+    box-shadow: 0 6px 30px 0 rgba(0,0,0,.1)
+}
+
+.tui-skin_android .tui-dialog__title {
+    font-size: 21px
+}
+
+.tui-skin_android .tui-dialog__hd {
+    text-align: left
+}
+
+.tui-skin_android .tui-dialog__bd {
+    color: #999;
+    padding: .25em 1.6em 2em;
+    font-size: 17px;
+    text-align: left
+}
+
+.tui-skin_android .tui-dialog__bd:first-child {
+    padding: 1.6em 1.6em 2em;
+    color: #353535
+}
+
+.tui-skin_android .tui-dialog__ft {
+    display: block;
+    text-align: right;
+    line-height: 42px;
+    font-size: 16px;
+    padding: 0 1.6em .7em
+}
+
+.tui-skin_android .tui-dialog__ft:after {
+    display: none
+}
+
+.tui-skin_android .tui-dialog__btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 .8em
+}
+
+.tui-skin_android .tui-dialog__btn:after {
+    display: none
+}
+
+.tui-skin_android .tui-dialog__btn:active,.tui-skin_android .tui-dialog__btn:visited {
+    background-color: rgba(0,0,0,.06)
+}
+
+.tui-skin_android .tui-dialog__btn:last-child {
+    margin-right: -.8em
+}
+
+.tui-skin_android .tui-dialog__btn_default {
+    color: gray
+}
+
+@media screen and (min-width: 1024px) {
+    .tui-dialog {
+        width:35%
+    }
+}
